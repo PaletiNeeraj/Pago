@@ -1,0 +1,754 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>MovieMall</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MovieMall</h1>
+            </div>&nbsp;&nbsp;
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Search for a movie...">
+              <div id="suggestions" class="suggestions"></div>
+          </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movie</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+                
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <h1>Top Rated</h1>
+                <img class="featured-title" src="https://cdn.123telugu.com/content/wp-content/uploads/2023/12/Salaar-2.jpg" alt="">
+                <p class="featured-desc">The fate of a violently contested kingdom hangs on the fraught bond between two friends-turned-foes in this saga of power.</p>
+                <button class="featured-button"> WATCH</button>
+            </div>
+
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfulEeFIAX0o70y8YqYeovS5hL9UjR-CwNg&usqp=CAU" alt="">
+                            <span class="movie-list-item-title">Kalki 2898 AD</span>
+                            <p class="movie-list-item-desc">A modern avatar of the Hindu god Vishnu, is said to have descended on Earth to protect the world from evil forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.greatandhra.com/newphotos10/raayan31721981832.jpg" alt="">
+                            <span class="movie-list-item-title">Raayan</span>
+                            <p class="movie-list-item-desc">After his family is killed, a young man trains to avenge their murders. Seeking those responsible.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Saripodhaa-Sanivaaram-Movie-Review.jpg" alt="">
+                            <span class="movie-list-item-title">Saripodhaa Sanivaaram</span>
+                            <p class="movie-list-item-desc">In order to defend the innocent from a corrupt and brutal cop, a vigilante hero must work around his own self-imposed code of honor.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/weapon.jpg" alt="">
+                            <span class="movie-list-item-title">Weapon</span>
+                            <p class="movie-list-item-desc">Weapon is a 2024 Indian superhero film directed by Guhan Senniappan and produced by M. S. Manzoor under Million Studio.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Paarijatha Parvam.jpg" alt="">
+                            <span class="movie-list-item-title">Paarijatha Parvam</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            
+            <div class="movie-list-container">
+              <h1 class="movie-list-title">Prabhas Movies</h1>
+              <div class="movie-list-wrapper">
+                  <div class="movie-list">
+                     
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="https://cdn.123telugu.com/content/wp-content/uploads/2023/12/Salaar-2.jpg" alt="">
+                          <span class="movie-list-item-title">Salaar</span>
+                          <p class="movie-list-item-desc">The fate of a violently contested kingdom hangs on the fraught bond between two friends-turned-foes in this saga of power.</p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/radhe.jpg" alt="">
+                          <span class="movie-list-item-title">Radhe Shyam</span>
+                          <p class="movie-list-item-desc">In 1970s Europe, a world-renowned palmist named Vikramaditya finds love when he meets Prerana, a doctor.</p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                      <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/bahu1.jpg" alt="">
+                        <span class="movie-list-item-title">Baahubali:The Beginning</span>
+                        <p class="movie-list-item-desc">In the kingdom of Mahishmati, Shivudu falls in love with a young warrior woman.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="img/saaho-imdb.jpg" alt="">
+                      <span class="movie-list-item-title">Saaho</span>
+                      <p class="movie-list-item-desc">An undercover agent and his partner go after a thief who has stolen 2,000 crore rupees</p>
+                      <button class="movie-list-item-button">Watch</button>
+                  </div>
+                  
+                      <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfulEeFIAX0o70y8YqYeovS5hL9UjR-CwNg&usqp=CAU" alt="">
+                        <span class="movie-list-item-title">Kalki 2898 AD</span>
+                        <p class="movie-list-item-desc">A modern avatar of the Hindu god Vishnu, is said to have descended on Earth to protect the world from evil forces.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                      
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                              hic fugit similique accusantium.</p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                              hic fugit similique accusantium.</p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                  </div>
+                  <i class="fas fa-chevron-right arrow"></i>
+              </div>
+          </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Ramcharan movies</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/acharya-movie.jpg" alt="">
+                            <span class="movie-list-item-title">Acharya</span>
+                            <p class="movie-list-item-desc">When Dharmasthali, a village, is ruled by some of the most powerful but corrupt leaders.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/rrr.jpg" alt="">
+                            <span class="movie-list-item-title">RRR</span>
+                            <p class="movie-list-item-desc">RRR is Indian Telugu-language epic period action drama film directed by Rajamouli, who co-wrote the film with V. Vijayendra Prasad.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Ranga.jpg" alt="">
+                            <span class="movie-list-item-title">Rangasthalam</span>
+                            <p class="movie-list-item-desc">A young man with impaired hearing and his elder brother decide to oppose the tyrannical rule of Phanindra</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Dhruva.jpg" alt="">
+                            <span class="movie-list-item-title">Dhruva</span>
+                            <p class="movie-list-item-desc">An IPS officer discovers a strong network of organised crime. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/maga.jpg" alt="">
+                            <span class="movie-list-item-title">Magadheera</span>
+                            <p class="movie-list-item-desc">When Harsha sets out to his clear his name, he recalls his previous life from 400 years ago and his connection to them.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        
+            <div class="movie-list-container">
+              <h1 class="movie-list-title">Tamil</h1>
+              <div class="movie-list-wrapper">
+                  <div class="movie-list">
+                    <div class="movie-list-item">
+                      <img class="movie-list-item-img" src="https://www.greatandhra.com/newphotos10/raayan31721981832.jpg" alt="">
+                      <span class="movie-list-item-title">Raayan</span>
+                      <p class="movie-list-item-desc">After his family is killed, a young man trains to avenge their murders. Seeking those responsible.</p>
+                      <button class="movie-list-item-button">Watch</button>
+                  </div>
+
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/weapon.jpg" alt="">
+                          <span class="movie-list-item-title">Weapon</span>
+                          <p class="movie-list-item-desc">Weapon is a 2024 Indian superhero film directed by Guhan Senniappan and produced by M. S. Manzoor under Million Studio.</p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img class="movie-list-item-img" src="img/master.jpg" alt="">
+                          <span class="movie-list-item-title">Master</span>
+                          <p class="movie-list-item-desc">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him. </p>
+                          <button class="movie-list-item-button">Watch</button>
+                      </div>
+                      <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/vikram.jpg" alt="">
+                        <span class="movie-list-item-title">Vikram</span>
+                        <p class="movie-list-item-desc">A special agent investigates a murder committed by a masked group of serial killers..</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                   
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/Saripodhaa-Sanivaaram-Movie-Review.jpg" alt="">
+                        <span class="movie-list-item-title">Saripodhaa Sanivaaram</span>
+                        <p class="movie-list-item-desc">In order to defend the innocent from a corrupt and brutal cop, a vigilante hero must work around his own self-imposed code of honor.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                  </div>
+                  <i class="fas fa-chevron-right arrow"></i>
+              </div>
+          </div>
+          <div class="movie-list-container">
+            <h1 class="movie-list-title">Other Languages</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/animal-27112023.jpg" alt="">
+                        <span class="movie-list-item-title">Animal</span>
+                        <p class="movie-list-item-desc">The son of a wealthy, powerful industrialist returns to India and undergoes a remarkable transformation.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/deadpool2_5a659a75.jpeg" alt="">
+                        <span class="movie-list-item-title">Deadpool 2</span>
+                        <p class="movie-list-item-desc">Deadpool protects a young mutant Russell from the authorities and gets thrown in prison. </p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/insep.jpeg" alt="">
+                        <span class="movie-list-item-title">Inception</span>
+                        <p class="movie-list-item-desc">Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/weapon.jpg" alt="">
+                        <span class="movie-list-item-title">Weapon</span>
+                        <p class="movie-list-item-desc">Weapon is a 2024 Indian superhero film directed by Guhan Senniappan and produced by M. S. Manzoor under Million Studio.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                  
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+
+<style>
+    * {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(215, 60, 60);
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+ 
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 40vh;
+  padding: 50px;
+}
+
+.featured-title {
+  width: 270px;
+}
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  background-color: rgb(215, 60, 60);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 370px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: rgb(215, 60, 60);;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+button{
+cursor:pointer
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+}
+
+.suggestions p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    color: black;
+}
+
+.suggestions p:hover {
+    background-color: #f0f0f0;
+}
+
+.no-results {
+    padding: 10px;
+    color: #999;
+    font-style: italic;
+}
+/*.watch-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.watch-button:hover {
+  background-color: #444;
+}*/
+</style>
+
+<script>
+    const arrows = document.querySelectorAll(".arrow");
+const movieLists = document.querySelectorAll(".movie-list");
+
+arrows.forEach((arrow, i) => {
+  const itemNumber = movieLists[i].querySelectorAll("img").length;
+  let clickCounter = 0;
+  arrow.addEventListener("click", () => {
+    const ratio = Math.floor(window.innerWidth / 270);
+    clickCounter++;
+    if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+      movieLists[i].style.transform = `translateX(${
+        movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+      }px)`;
+    } else {
+      movieLists[i].style.transform = "translateX(0)";
+      clickCounter = 0;
+    }
+  });
+
+  console.log(Math.floor(window.innerWidth / 270));
+});
+
+
+
+const ball = document.querySelector(".toggle-ball");
+const items = document.querySelectorAll(
+  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle"
+);
+
+ball.addEventListener("click", () => {
+  items.forEach((item) => {
+    item.classList.toggle("active");
+  });
+  ball.classList.toggle("active");
+});
+
+</script>
+<script>
+
+const movies = [
+  "The Shawshank Redemption",
+  "The Godfather",
+  "The Dark Knight",
+  "Pulp Fiction",
+  "The Lord of the Rings: The Return of the King",
+  "Forrest Gump",
+  "Inception",
+  "The Matrix",
+  "Fight Club",
+  "The Silence of the Lambs",
+  "Kalki 2898 AD"
+];
+
+const searchInput = document.getElementById('search-input');
+const suggestionsContainer = document.getElementById('suggestions');
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  suggestionsContainer.innerHTML = '';
+
+  if (query) {
+      const filteredMovies = movies.filter(movie => movie.toLowerCase().includes(query));
+
+      if (filteredMovies.length > 0) {
+          filteredMovies.forEach(movie => {
+              const suggestion = document.createElement('p');
+              suggestion.textContent = movie;
+              suggestionsContainer.appendChild(suggestion);
+
+           
+              suggestion.addEventListener('click', () => {
+                  searchInput.value = movie;
+                  suggestionsContainer.innerHTML = '';
+              });
+          });
+          suggestionsContainer.style.display = 'block';
+      } else {
+          suggestionsContainer.innerHTML = '<p class="no-results">No results found</p>';
+          suggestionsContainer.style.display = 'block';
+      }
+  } else {
+      suggestionsContainer.style.display = 'none';
+  }
+ /* const watchButtons = document.querySelectorAll('.watch-button');
+
+watchButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    console.log('Watch button clicked!');
+  });*/
+});
+});
+
+</script>
+</html>
